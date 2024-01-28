@@ -17,23 +17,23 @@
   -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
-	<parent>
-		<groupId>in.dream_lab.bm.stream_iot</groupId>
-		<artifactId>iot-bm</artifactId>
-		<version>0.1</version>
-		<relativePath>../../pom.xml</relativePath>
-	</parent>
 
+  <parent>
     <groupId>in.dream_lab.bm.stream_iot</groupId>
-	<artifactId>iot-bm-distro</artifactId>
+    <artifactId>iot-bm</artifactId>
+    <version>0.1</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
 
-	<name>IoT-BM-DISTRO</name>
-	<description>IoT Benchmark Distribution</description>
-	<packaging>jar</packaging>
+  <groupId>in.dream_lab.bm.stream_iot</groupId>
+  <artifactId>iot-bm-distro</artifactId>
+
+  <name>IoT-BM-DISTRO</name>
+  <description>IoT Benchmark Distribution</description>
+  <packaging>jar</packaging>
 
   <dependencies>
     <dependency>
@@ -62,7 +62,7 @@
               <descriptors>
                 <descriptor>assembly/bin.xml</descriptor>
               </descriptors>
-               <finalName>iot-bm</finalName>
+              <finalName>iot-bm</finalName>
             </configuration>
           </execution>
         </executions>

@@ -17,17 +17,17 @@
   -->
 
 <project
-        xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>in.dream_lab.bm.stream_iot</groupId>
     <artifactId>iot-bm</artifactId>
-	<version>0.1</version>
+    <version>0.1</version>
     <name>IoT-BM</name>
     <description>IoT Benchmark</description>
 
-    <packaging>pom</packaging> 
+    <packaging>pom</packaging>
     <url>http://www.dream-lab.in/</url>
 
     <inceptionYear>2016</inceptionYear>
@@ -55,18 +55,19 @@
                             <attach>true</attach>
                         </configuration>
                     </plugin>
-                     <plugin>
-                      <artifactId>maven-assembly-plugin</artifactId>
-                      <version>2.4</version>
-                      <configuration>
-                        <descriptors>
-                          <descriptor>assembly/bin.xml</descriptor>
-                        </descriptors>
-                      </configuration>
+                    <plugin>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <version>2.4</version>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>assembly/bin.xml</descriptor>
+                            </descriptors>
+                        </configuration>
                     </plugin>
 
 
-                    <!--&lt;!&ndash;extra by anshu&ndash;&gt;-->
+                    <!--&lt;!&ndash;extra
+                    by anshu&ndash;&gt;-->
 
                     <plugin>
                         <artifactId>maven-assembly-plugin</artifactId>
@@ -91,7 +92,8 @@
                         </executions>
                     </plugin>
 
-                    <!--&lt;!&ndash;extra by anshu&ndash;&gt;-->
+                    <!--&lt;!&ndash;extra
+                    by anshu&ndash;&gt;-->
 
 
                 </plugins>
@@ -102,7 +104,7 @@
                     <name>release</name>
                 </property>
             </activation>
-        </profile>       
+        </profile>
     </profiles>
 
 
@@ -121,36 +123,36 @@
         </dependencies>
     </dependencyManagement>
 
-    
+
     <repositories>
         <repository>
-        	<id>MavenCentral</id>
-        	<name>Maven repository</name>
-        	<url>http://repo1.maven.org/maven2</url>
-        	<releases>
-        		<enabled>true</enabled>
-        	</releases>
-        	<snapshots>
-        		<enabled>false</enabled>
-        	</snapshots>
+            <id>MavenCentral</id>
+            <name>Maven repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
 
         <repository>
-        	<id>Codehaus Snapshots</id>
-        	<url>http://snapshots.repository.codehaus.org/</url>
-        	<snapshots>
-        		<enabled>true</enabled>
-        	</snapshots>
-        	<releases>
-        		<enabled>false</enabled>
-        	</releases>
+            <id>Codehaus Snapshots</id>
+            <url>http://snapshots.repository.codehaus.org/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
     </repositories>
 
     <modules>
-       <module>modules/tasks</module>
-	   <module>modules/storm</module>
-	   <module>modules/distribution</module>
+        <module>modules/tasks</module>
+        <module>modules/storm</module>
+        <module>modules/distribution</module>
     </modules>
 
     <properties>
